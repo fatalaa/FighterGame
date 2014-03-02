@@ -10,7 +10,7 @@ import java.util.List;
 
 public class Runner {
     public static void main(String[] args) {
-        List<Warrior> warriors = MathHelper.generateAllCombinations(true);
+        List<Warrior> warriors = MathHelper.generateAllCombinations(false);
         List<Ranking> rankings = new ArrayList<Ranking>(warriors.size());
         for (Warrior warrior : warriors) {
             for (int i = 0; i < warriors.size(); i++) {
